@@ -48,14 +48,20 @@ Using Terraform, we resources the following:
 * GitHub Actions for:
   * Terraform Plan & Apply
   * Docker builds and image pushes
-  * Syncing Argo CD manifests per env
+  * Syncing Argo CD manifests per environment
 * ArgoCD for CD automation with fast rollback capability ([local link](https://localhost:8080/applications))
 
 ### 4a. REPOSITORIES
 
-<table><thead><tr><th width="174.99993896484375" align="center">Repository</th><th align="center">Role/Policy Tagging</th><th align="center">Link</th></tr></thead><tbody><tr><td align="center">PRODUCTION</td><td align="center">env: prod</td><td align="center"><a href="https://github.com/aalimsee/ce-grp-1-apps"><img src="https://img.shields.io/badge/GitHub-APP%20Repo-00FFFF?logo=github" alt="Repo"></a></td></tr><tr><td align="center">STAGING</td><td align="center">env: staging</td><td align="center"></td></tr><tr><td align="center">DEVELOPMENT</td><td align="center">env: dev</td><td align="center"></td></tr><tr><td align="center">ADMIN</td><td align="center">NA</td><td align="center"><a href="https://github.com/aalimsee/ce-grp-1-vpc"><img src="https://img.shields.io/badge/GitHub-VPC%20Repo-00A4A6?logo=github" alt="Repo"></a><a href="https://github.com/aalimsee/ce-grp-1-eks"><img src="https://img.shields.io/badge/GitHub-EKS%20Repo-00A4A6?logo=github" alt="Repo"></a></td></tr><tr><td align="center">CONTAINER</td><td align="center"></td><td align="center"></td></tr></tbody></table>
+<table><thead><tr><th width="174.99993896484375" align="center">Repository</th><th align="center">Role/Policy Tagging</th><th align="center">Link</th></tr></thead><tbody><tr><td align="center">PRODUCTION</td><td align="center">env: prod</td><td align="center"><a href="https://github.com/aalimsee/ce-grp-1-apps"><img src="https://img.shields.io/badge/GitHub-APP%20Repo-00FFFF?logo=github" alt="Repo"></a></td></tr><tr><td align="center">STAGING</td><td align="center">env: staging</td><td align="center">forked from PROD</td></tr><tr><td align="center">DEVELOPMENT</td><td align="center">env: dev</td><td align="center">forked from STAGING</td></tr><tr><td align="center">ADMIN</td><td align="center">NA</td><td align="center"><a href="https://github.com/aalimsee/ce-grp-1-vpc"><img src="https://img.shields.io/badge/GitHub-VPC%20Repo-99FF99?logo=github" alt="Repo"></a> <a href="https://github.com/aalimsee/ce-grp-1-eks"><img src="https://img.shields.io/badge/GitHub-EKS%20Repo-FF8000?logo=github" alt="Repo"></a></td></tr></tbody></table>
 
 ### 5. 🔐 **SECURITY**
+
+* IAM least privilege (Through ArgoCD RBAC)
+* Repositories segregated and review-gated
+* Vulnerability checking at IaC deployment
+* HTTPS enforced via ALB
+* Argo CD RBAC and external secret support
 
 ### **5a. RBAC STRATEGIES**
 
@@ -70,10 +76,9 @@ Using Terraform, we resources the following:
 
 * NGINX: [https://ce-grp-1.sctp-sandbox.com](https://ce-grp-1.sctp-sandbox.com/) and [https://ce-grp-1.sctp-sandbox.com/app2/](https://ce-grp-1.sctp-sandbox.com/app2)
 * Monitoring: Prometheus + Grafana at [https://prometheus.ce-grp-1.sctp-sandbox.com/](https://prometheus.ce-grp-1.sctp-sandbox.com/) and [https://grafana.ce-grp-1.sctp-sandbox.com/](https://grafana.ce-grp-1.sctp-sandbox.com/)
-* Argo CD App-of-Apps structure with multi-env
+* Argo CD App-of-Apps structure with multi-environments
 
 ## FUTURE
 
-GitHub Actions, ArgoCD
-
-more description?
+* TLS Certification for monitoring apps need to be included, not implemented yet.
+* Currently using one cluster and isolate environments by namespace is not ideal, recommend to isolate environments by cluster.

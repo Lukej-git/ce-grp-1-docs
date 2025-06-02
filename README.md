@@ -82,3 +82,4 @@ Using Terraform, we resources the following:
 
 * TLS Certification for monitoring apps need to be included, not implemented yet.
 * Currently using one cluster and isolate environments by namespace is not ideal, recommend to isolate environments by cluster.
+* Not Used in this project, Checkov scans cloud infrastructure configurations to find misconfigurations before they're deployed. Not needed yet at this scale.

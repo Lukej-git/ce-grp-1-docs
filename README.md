@@ -1,6 +1,12 @@
 # SCTP-CE9-Grp1-Capstone
 
-#### With efforts from the team:
+####
+
+####
+
+####
+
+With efforts from the team:
 
 * Aaron Lim
 * Clifford Cheung
@@ -12,17 +18,17 @@ We present to you our take on a fast-growing startup that’s expanding its prod
 
 ## CONTENT
 
-* ARCHITECTURE
-  1. :eyes: AT-A-GLANCE
-  2. :mag\_right: DIAGRAM
-  3. 🔧 IaC STACK
-  4. 🔁 CI/CD
-     1. REPOSITORIES STRUCTURE
-  5. 🔐 SECURITY
-     1. RBAC STRATEGIES
-  6. 📈 MONITORING
-* APPLICATION DEPLOYMENT
-* FUTURE
+* [ARCHITECTURE](./#architecture)
+  1. :eyes: [AT-A-GLANCE](./#id-1.-at-a-glance)
+  2. :mag\_right: [DIAGRAM](./#id-2.-diagram)
+  3. 🔧 [IaC STACK](./#id-3.-iac-stack)
+  4. 🔁 [CI/CD](./#id-4.-ci-cd)
+     1. [REPOSITORIES STRUCTURE](./#id-4a.-repositories)
+  5. 🔐 [SECURITY](./#id-5.-security)
+     1. [RBAC STRATEGIES](./#id-5a.-rbac-strategies)
+  6. 📈 [MONITORING](./#id-6.-monitoring)
+* [APPLICATION DEPLOYMENT](./#application-deployment)
+* [FUTURE](./#future)
 
 ## ARCHITECTURE
 
@@ -32,7 +38,7 @@ A GitOps-driven EKS deployment using Argo CD, Terraform, and AWS-native services
 
 ### 2. :mag\_right: DIAGRAM
 
-<figure><img src=".gitbook/assets/CE9-Grp-1-Archi.png" alt=""><figcaption><p>SCTP-CE9-Grp1-Capstone-Architectural-Diagram</p></figcaption></figure>
+<figure><img src=".gitbook/assets/CE9-Grp-1-Archi.png" alt=""><figcaption></figcaption></figure>
 
 ### 3. 🔧 IaC STACK
 

@@ -1,11 +1,5 @@
 # SCTP-CE9-Grp1-Capstone
 
-####
-
-####
-
-####
-
 With efforts from the team:
 
 * Aaron Lim
@@ -21,14 +15,14 @@ We present to you our take on a fast-growing startup that’s expanding its prod
 * [ARCHITECTURE](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#architecture)
   1. :eyes: [AT-A-GLANCE](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#1-eyes-at-a-glance)
   2. :mag\_right: [DIAGRAM](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#2-mag_right-diagram)
-  3. 🔧 [IaC STACK](./#id-3.-iac-stack)
-  4. 🔁 [CI/CD](./#id-4.-ci-cd)
-     1. [REPOSITORIES STRUCTURE](./#id-4a.-repositories)
-  5. 🔐 [SECURITY](./#id-5.-security)
-     1. [RBAC STRATEGIES](./#id-5a.-rbac-strategies)
-  6. 📈 [MONITORING](./#id-6.-monitoring)
-* [APPLICATION DEPLOYMENT](./#application-deployment)
-* [FUTURE](./#future)
+  3. 🔧 [IaC STACK](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#3--iac-stack)
+  4. 🔁 [CI/CD](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#4--cicd)
+     1. [REPOSITORIES STRUCTURE](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#4a-repositories)
+  5. 🔐 [SECURITY](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#5a-rbac-strategies)
+     1. [RBAC STRATEGIES](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#5--security)
+  6. 📈 [MONITORING](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#6--monitoring)
+* [APPLICATION DEPLOYMENT](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#application-deployment)
+* [FUTURE](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#application-deployment)
 
 ## ARCHITECTURE <a href="#archi" id="archi"></a>
 

@@ -1,9 +1,5 @@
 # SCTP-CE9-Grp1-Capstone
 
-[![Repo](https://img.shields.io/badge/GitHub-VPC%20Repo-00A4A6?logo=github)](https://github.com/aalimsee/ce-grp-1-vpc) [![Repo](https://img.shields.io/badge/GitHub-EKS%20Repo-00A4A6?logo=github)](https://github.com/aalimsee/ce-grp-1-eks) [![Repo](https://img.shields.io/badge/GitHub-APP%20Repo-00FFFF?logo=github)](https://github.com/aalimsee/ce-grp-1-apps)
-
-## SUMMARY
-
 #### With efforts from the team:
 
 * Aaron Lim
@@ -16,47 +12,68 @@ We present to you our take on a fast-growing startup that’s expanding its prod
 
 ## CONTENT
 
-1. **Architectural Diagram**
-2. **Products & Why Pipeline Vulnerability**
-3. **CI/CD Tec**
-4. **RBAC Strategies**
-5. **Further Improvements**
+* ARCHITECTURE
+  1. :eyes: AT-A-GLANCE
+  2. :mag\_right: DIAGRAM
+  3. 🔧 IaC STACK
+  4. 🔁 CI/CD
+     1. REPOSITORIES STRUCTURE
+  5. 🔐 SECURITY
+     1. RBAC STRATEGIES
+  6. 📈 MONITORING
+* APPLICATION DEPLOYMENT
+* FUTURE
 
-### 1. ARCHITECTURAL DIAGRAM
+## ARCHITECTURE
 
-There will be a diagram here
+### 1. :eyes: AT-A-GLANCE
+
+A GitOps-driven EKS deployment using Argo CD, Terraform, and AWS-native services with secure HTTPS, monitoring, and CI/CD.
+
+### 2. :mag\_right: DIAGRAM
 
 <figure><img src=".gitbook/assets/CE9-Grp-1-Archi.png" alt=""><figcaption><p>SCTP-CE9-Grp1-Capstone-Architectural-Diagram</p></figcaption></figure>
 
-then some description here
+### 3. 🔧 IaC STACK
 
-***
+Using Terraform, we resources the following:
 
-### 2. PRODUCTS & PIPELINE VULNERABILITY
+* VPC with public/private subnets;
+* EKS with EC2 and managed nodegroups;
+* Route 53 hosted zone + ACM TLS certs;
+* IRSA roles for ALB, ExternalDNS, Prometheus.
 
-There will be brief explanation of what our product is and what happens to it if pipeline is vulnerable
+### 4. 🔁 **CI/CD**
 
-somemore nitty gritty here
+* GitHub Actions for:
+  * Terraform Plan & Apply
+  * Docker builds and image pushes
+  * Syncing Argo CD manifests per env
+* ArgoCD for CD automation with fast rollback capability ([local link](https://localhost:8080/applications))
 
+### 4a. REPOSITORIES
 
+<table><thead><tr><th width="174.99993896484375" align="center">Repository</th><th align="center">Role/Policy Tagging</th><th align="center">Link</th></tr></thead><tbody><tr><td align="center">PRODUCTION</td><td align="center">env: prod</td><td align="center"><a href="https://github.com/aalimsee/ce-grp-1-apps"><img src="https://img.shields.io/badge/GitHub-APP%20Repo-00FFFF?logo=github" alt="Repo"></a></td></tr><tr><td align="center">STAGING</td><td align="center">env: staging</td><td align="center"></td></tr><tr><td align="center">DEVELOPMENT</td><td align="center">env: dev</td><td align="center"></td></tr><tr><td align="center">ADMIN</td><td align="center">NA</td><td align="center"><a href="https://github.com/aalimsee/ce-grp-1-vpc"><img src="https://img.shields.io/badge/GitHub-VPC%20Repo-00A4A6?logo=github" alt="Repo"></a><a href="https://github.com/aalimsee/ce-grp-1-eks"><img src="https://img.shields.io/badge/GitHub-EKS%20Repo-00A4A6?logo=github" alt="Repo"></a></td></tr><tr><td align="center">CONTAINER</td><td align="center"></td><td align="center"></td></tr></tbody></table>
 
-***
+### 5. 🔐 **SECURITY**
 
-### 3. CI/CD TECHNOLOGIES
+### **5a. RBAC STRATEGIES**
+
+<table><thead><tr><th width="175" align="center">Role</th><th align="center">Access Level</th><th align="center">Role/Policy Tagging</th></tr></thead><tbody><tr><td align="center">PRODUCTION</td><td align="center">Full (Includes below and Delete etc)</td><td align="center">env: prod</td></tr><tr><td align="center">STAGING</td><td align="center">Limited (Create/Deploy/Test Only)</td><td align="center">env: staging</td></tr><tr><td align="center">DEVELOPMENT</td><td align="center">Restricted (Update/Deploy/Test Only)</td><td align="center">env: dev</td></tr><tr><td align="center">ADMIN</td><td align="center">ADMIN</td><td align="center">NA</td></tr></tbody></table>
+
+### 6. 📈 **MONITORING**
+
+* Prometheus + Grafana with PVC
+* TLS-enabled dashboards
+
+## APPLICATION DEPLOYMENT
+
+* NGINX: [https://ce-grp-1.sctp-sandbox.com](https://ce-grp-1.sctp-sandbox.com/) and [https://ce-grp-1.sctp-sandbox.com/app2/](https://ce-grp-1.sctp-sandbox.com/app2)
+* Monitoring: Prometheus + Grafana at [https://prometheus.ce-grp-1.sctp-sandbox.com/](https://prometheus.ce-grp-1.sctp-sandbox.com/) and [https://grafana.ce-grp-1.sctp-sandbox.com/](https://grafana.ce-grp-1.sctp-sandbox.com/)
+* Argo CD App-of-Apps structure with multi-env
+
+## FUTURE
 
 GitHub Actions, ArgoCD
 
-more description?\
-
-
-***
-
-### 4. RBAC STRATEGIES
-
-<table><thead><tr><th align="center">Repository</th><th align="center">Access Level</th><th align="center">Role/Policy Tagging</th><th data-type="content-ref"></th></tr></thead><tbody><tr><td align="center">Production</td><td align="center">Full (Includes below and Delete etc)</td><td align="center">env: prod</td><td></td></tr><tr><td align="center">Staging</td><td align="center">Limited (Create/Deploy/Test Only)</td><td align="center">env: staging</td><td></td></tr><tr><td align="center">Development</td><td align="center">Restricted (Update/Deploy/Test Only)</td><td align="center">env: dev</td><td></td></tr><tr><td align="center"></td><td align="center"></td><td align="center"></td><td></td></tr></tbody></table>
-
-
-
-***
-
-### 5. FURTHER IMPROVEMENTS
+more description?

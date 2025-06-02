@@ -16,13 +16,13 @@ ce-grp-1-capstone/
 
 ## 🔧 Infrastructure Stack (Terraform)
 - VPC with public/private subnets
-- EKS with Fargate and managed nodegroups
+- EKS with EC2 and managed nodegroups
 - Route 53 hosted zone + ACM TLS certs
 - IRSA roles for ALB, ExternalDNS, Prometheus
 
 ## 🎯 Application Deployments (Argo CD)
-- NGINX: `/` and `/app2`
-- Monitoring: Prometheus + Grafana at `/monitor`
+- NGINX: `https://ce-grp-1.sctp-sandbox.com` and `https://ce-grp-1.sctp-sandbox.com/app2/`
+- Monitoring: Prometheus + Grafana at `https://prometheus.ce-grp-1.sctp-sandbox.com/` and `https://grafana.ce-grp-1.sctp-sandbox.com/`
 - Argo CD App-of-Apps structure with multi-env
 
 ## 🔐 Security

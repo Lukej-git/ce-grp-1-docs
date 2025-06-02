@@ -16,11 +16,11 @@ We present to you our take on a fast-growing startup that’s expanding its prod
 
 ## CONTENT
 
-1. Architectural Diagram
-2. Products & Why Pipeline Vulnerability
-3. CI/CD Tec
-4. RBAC Strategies
-5. Further Improvements
+1. **Architectural Diagram**
+2. **Products & Why Pipeline Vulnerability**
+3. **CI/CD Tec**
+4. **RBAC Strategies**
+5. **Further Improvements**
 
 ### 1. ARCHITECTURAL DIAGRAM
 

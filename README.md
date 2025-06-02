@@ -12,7 +12,7 @@ We present to you our take on a fast-growing startup that’s expanding its prod
 
 ## CONTENT
 
-* [ARCHITECTURE](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#architecture)
+* [ARCHITECTURE](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#architecture-)
   1. :eyes: [AT-A-GLANCE](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#1-eyes-at-a-glance)
   2. :mag\_right: [DIAGRAM](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#2-mag_right-diagram)
   3. 🔧 [IaC STACK](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#3--iac-stack)

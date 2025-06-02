@@ -26,6 +26,8 @@
 
 There will be a diagram here
 
+<figure><img src=".gitbook/assets/CE9-Grp-1-Archi.png" alt=""><figcaption><p>SCTP-CE9-Grp1-Capstone-Architectural-Diagram</p></figcaption></figure>
+
 then some description here
 
 ***

@@ -51,7 +51,7 @@ Using Terraform, we resources the following:
   * Syncing Argo CD manifests per environment
 * ArgoCD for CD automation with fast rollback capability ([local link](https://localhost:8080/applications))
 
-### 4a. REPOSITORIES
+#### 4a. REPOSITORIES
 
 <table><thead><tr><th width="174.99993896484375" align="center">Repository</th><th align="center">Role/Policy Tagging</th><th align="center">Link</th></tr></thead><tbody><tr><td align="center">PRODUCTION</td><td align="center">env: prod</td><td align="center"><a href="https://github.com/aalimsee/ce-grp-1-apps"><img src="https://img.shields.io/badge/GitHub-APP%20Repo-00FFFF?logo=github" alt="Repo"></a></td></tr><tr><td align="center">STAGING</td><td align="center">env: staging</td><td align="center">forked from PROD</td></tr><tr><td align="center">DEVELOPMENT</td><td align="center">env: dev</td><td align="center">forked from STAGING</td></tr><tr><td align="center">ADMIN</td><td align="center">NA</td><td align="center"><a href="https://github.com/aalimsee/ce-grp-1-vpc"><img src="https://img.shields.io/badge/GitHub-VPC%20Repo-99FF99?logo=github" alt="Repo"></a> <a href="https://github.com/aalimsee/ce-grp-1-eks"><img src="https://img.shields.io/badge/GitHub-EKS%20Repo-FF8000?logo=github" alt="Repo"></a></td></tr></tbody></table>
 
@@ -63,7 +63,7 @@ Using Terraform, we resources the following:
 * HTTPS enforced via ALB
 * Argo CD RBAC and external secret support
 
-### **5a. RBAC STRATEGIES**
+#### **5a. RBAC STRATEGIES**
 
 <table><thead><tr><th width="175" align="center">Role</th><th align="center">Access Level</th><th align="center">Role/Policy Tagging</th></tr></thead><tbody><tr><td align="center">PRODUCTION</td><td align="center">Full (Includes below and Delete etc)</td><td align="center">env: prod</td></tr><tr><td align="center">STAGING</td><td align="center">Limited (Create/Deploy/Test Only)</td><td align="center">env: staging</td></tr><tr><td align="center">DEVELOPMENT</td><td align="center">Restricted (Update/Deploy/Test Only)</td><td align="center">env: dev</td></tr><tr><td align="center">ADMIN</td><td align="center">ADMIN</td><td align="center">NA</td></tr></tbody></table>
 

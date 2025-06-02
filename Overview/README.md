@@ -21,7 +21,7 @@ ce-grp-1-capstone/
 - IRSA roles for ALB, ExternalDNS, Prometheus
 
 ## 🎯 Application Deployments (Argo CD)
-- NGINX: `[https://ce-grp-1.sctp-sandbox.com](https://prometheus.ce-grp-1.sctp-sandbox.com/)` and `[https://ce-grp-1.sctp-sandbox.com/app2/](https://prometheus.ce-grp-1.sctp-sandbox.com/)`
+- NGINX: [https://ce-grp-1.sctp-sandbox.com](https://prometheus.ce-grp-1.sctp-sandbox.com/) and `[https://ce-grp-1.sctp-sandbox.com/app2/](https://prometheus.ce-grp-1.sctp-sandbox.com/)`
 - Monitoring: Prometheus + Grafana at `[https://prometheus.ce-grp-1.sctp-sandbox.com/](https://prometheus.ce-grp-1.sctp-sandbox.com/)` and `[https://grafana.ce-grp-1.sctp-sandbox.com/](https://prometheus.ce-grp-1.sctp-sandbox.com/)`
 - Argo CD App-of-Apps structure with multi-env
 

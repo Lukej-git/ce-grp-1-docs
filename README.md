@@ -12,7 +12,7 @@
 * Azni Osman
 * Huang Cong Xuan (Daniel)
 
-#### We present to you our take on a fast-growing startup that’s expanding its products across multiple regions. Our task is to improve the existing DevOps pipeline by turning it into a DevSecOps pipeline — adding security checks at every stage of the CI/CD process. In this Capstone project, we set up a basic CI/CD pipeline and focus on the security measures added to it.
+We present to you our take on a fast-growing startup that’s expanding its products across multiple regions. Our task is to improve the existing DevOps pipeline by turning it into a DevSecOps pipeline — adding security checks at every stage of the CI/CD process. In this Capstone project, we set up a basic CI/CD pipeline and focus on the security measures added to it.
 
 ## CONTENT
 

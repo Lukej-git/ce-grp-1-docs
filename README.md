@@ -12,17 +12,17 @@ We present to you our take on a fast-growing startup that’s expanding its prod
 
 ## CONTENT
 
-* [ARCHITECTURE](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#architecture-)
-  1. :eyes: [AT-A-GLANCE](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#1-eyes-at-a-glance)
-  2. :mag\_right: [DIAGRAM](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#2-mag_right-diagram)
-  3. 🔧 [IaC STACK](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#3--iac-stack)
-  4. 🔁 [CI/CD](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#4--cicd)
-     1. [REPOSITORIES STRUCTURE](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#4a-repositories)
-  5. 🔐 [SECURITY](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#5a-rbac-strategies)
-     1. [RBAC STRATEGIES](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#5--security)
-  6. 📈 [MONITORING](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#6--monitoring)
-* [APPLICATION DEPLOYMENT](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#application-deployment)
-* [FUTURE](https://github.com/Lukej-git/ce-grp-1-docs/tree/main?tab=readme-ov-file#application-deployment)
+* [ARCHITECTURE](./#architecture-)
+  1. :eyes: [AT-A-GLANCE](./#1-eyes-at-a-glance)
+  2. :mag\_right: [DIAGRAM](./#2-mag_right-diagram)
+  3. 🔧 [IaC STACK](./#3--iac-stack)
+  4. 🔁 [CI/CD](./#4--cicd)
+     1. [REPOSITORIES STRUCTURE](./#4a-repositories)
+  5. 🔐 [SECURITY](./#5a-rbac-strategies)
+     1. [RBAC STRATEGIES](./#5--security)
+  6. 📈 [MONITORING](./#6--monitoring)
+* [APPLICATION DEPLOYMENT](./#application-deployment)
+* [FUTURE](./#application-deployment)
 
 ## ARCHITECTURE <a href="#archi" id="archi"></a>
 

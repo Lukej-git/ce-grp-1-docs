@@ -40,7 +40,7 @@ Using Terraform, we resources the following:
 
 * VPC with public/private subnets;
 * EKS with EC2 and managed nodegroups;
-* Route 53 hosted zone + ACM TLS certs;
+* Route 53 hosted zone + ACM (HTTPS) certs;
 * IRSA roles for ALB, ExternalDNS, Prometheus.
 
 ### 4. 🔁 **CI/CD**
@@ -48,7 +48,7 @@ Using Terraform, we resources the following:
 * GitHub Actions for:
   * Terraform Plan & Apply
   * Docker builds and image pushes
-  * Syncing Argo CD manifests per environment
+  * Syncing Argo CD manifests per environment (namespaces)
 * ArgoCD for CD automation with fast rollback capability ([local link](https://localhost:8080/applications))
 
 #### 4a. REPOSITORIES
@@ -80,6 +80,7 @@ Using Terraform, we resources the following:
 
 ## FUTURE
 
-* TLS Certification for monitoring apps need to be included, not implemented yet.
+* TLS certifications for monitoring apps need to be included, not implemented yet.
 * Currently using one cluster and isolate environments by namespace is not ideal, recommend to isolate environments by cluster.
-* Not Used in this project, Checkov scans cloud infrastructure configurations to find misconfigurations before they're deployed. Not needed yet at this scale.
+* Not used in this project, Checkov scans cloud infrastructure configurations to find misconfigurations before they're deployed. Not needed yet at this scale.
+

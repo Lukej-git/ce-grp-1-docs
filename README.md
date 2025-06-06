@@ -84,3 +84,7 @@ Using Terraform, we resources the following:
 * Currently using one cluster and isolate environments by namespace is not ideal, recommend to isolate environments by cluster.
 * Not used in this project, Checkov scans cloud infrastructure configurations to find misconfigurations before they're deployed. Not needed yet at this scale.
 
+## REFERENCE
+
+* [Detailed Slide Deck](https://docs.google.com/presentation/d/1tDqysmuKZ3f1lS4KDNFe13fID11KId1O/edit?usp=sharing\&ouid=108921775124130638700\&rtpof=true\&sd=true)
+
